@@ -73,9 +73,9 @@ $(function() {
   }
 
   $('.foot-links button').on('click', function() {
-      $(this).find("i").toggleClass("trans");
+      $(this).toggleClass("trans");
       $(this).parent().parent().siblings().find('.collapse').collapse('hide');
-      $(this).parent().parent().siblings().find('button i').removeClass("trans");
+      $(this).parent().parent().siblings().find('button').removeClass("trans");
   });
 
 })
