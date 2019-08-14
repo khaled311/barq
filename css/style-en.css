@@ -37,6 +37,11 @@ body{
     right: 50%;
 }
 
+.navBar > ul > li:not(:last-child) {
+    margin-right: 25px;
+    margin-left: unset;
+}
+
 .products .product .over button:not(:last-child) {
     margin-right: 5px;
     margin-left: unset;
@@ -128,10 +133,23 @@ body{
     }
 }
 
+@media (min-width: 1200px){
+    .news .row .form button {
+        right: 50px;
+        left: unset;
+    }
+}
+
 
 .news .row .content .icon {
     margin-right: 20px;
     margin-left: unset;
+}
+
+@media (min-width: 767px){
+    .news .row .content .icon {
+        margin-right: 0px;
+    }
 }
 
 .news .row .social a:not(:last-child) {

@@ -258,6 +258,9 @@ ul.res {
   @media (max-width: 767px) {
     .head .search {
       margin-top: 10px; } }
+  @media (max-width: 480px) {
+    .head .search {
+      width: 100%; } }
   .head .search input {
     width: 555px;
     height: 55px;
@@ -288,9 +291,9 @@ ul.res {
     @media (max-width: 767px) {
       .head .search input {
         width: 435px; } }
-    @media (max-width: 375px) {
+    @media (max-width: 480px) {
       .head .search input {
-        width: 300px; } }
+        width: 100%; } }
   .head .search button {
     position: absolute;
     top: 50%;
@@ -758,8 +761,8 @@ ul.res {
           margin-left: 0; }
         .products .product:nth-of-type(3n) {
           margin-left: 17px; } }
-    @media (max-width: 375px) {
-      .products .product:nth-of-type(3n) {
+    @media (max-width: 445px) {
+      .products .product {
         margin-left: 0; } }
     .products .product .pic {
       height: 208px;
@@ -1019,6 +1022,9 @@ ul.res {
       @media (max-width: 991px) {
         .news .row .form {
           margin: 25px 0; } }
+      @media (max-width: 480px) {
+        .news .row .form {
+          width: 90%; } }
       .news .row .form input {
         background-color: white;
         width: 458px;
@@ -1039,9 +1045,9 @@ ul.res {
           color: #9f9e9e; }
         .news .row .form input::placeholder {
           color: #9f9e9e; }
-        @media (max-width: 375px) {
+        @media (max-width: 480px) {
           .news .row .form input {
-            width: 300px; } }
+            width: 100%; } }
       .news .row .form button {
         width: 40px;
         height: 40px;
