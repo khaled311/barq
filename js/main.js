@@ -44,7 +44,7 @@ $(function() {
 
   // Main Slider
   $('.main-slider .owl-carousel').owlCarousel({
-    autoplay: true,
+    autoplay: false,
     rtl:true,
     loop:true,
     nav:true,

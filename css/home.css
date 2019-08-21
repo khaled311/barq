@@ -89,7 +89,7 @@ ul.res {
 .sideNav {
   position: fixed;
   top: 0;
-  right: -100%;
+  right: -261px;
   width: 260px;
   height: 100%;
   background-color: #FFF;
@@ -460,7 +460,8 @@ ul.res {
   .head .menu > div:not(:last-child) svg {
     margin-left: 25px; }
   .head .menu > div.user {
-    position: relative; }
+    position: relative;
+    cursor: pointer; }
     .head .menu > div.user:hover .drop {
       visibility: visible;
       opacity: 1;
