@@ -22,6 +22,12 @@ body{
     margin-left: unset;
 }
 
+@media (min-width: 992px){
+    .head .menu > div.cart svg {
+        margin-right: 0;
+    }
+}
+
 .head .menu > div.user .drop{
     left: -101%;
     right: unset;

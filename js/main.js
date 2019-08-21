@@ -29,6 +29,19 @@ $(function() {
     }
   });
 
+  // Search
+  $(".searBtn").on("click", function() {
+    $(".search").toggleClass("open");
+    $(".overlay").fadeIn();
+  });
+
+  if($(window).width() < 992){
+    $(".overlay, .bar").on("click", function(e) {
+      $(".search").removeClass("open");
+      $(".overlay").fadeOut();
+    });
+  }
+
   // Main Slider
   $('.main-slider .owl-carousel').owlCarousel({
     autoplay: true,
