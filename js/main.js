@@ -12,21 +12,21 @@ $(function() {
 
   // open Side Nav
   $(".menuTriger").on("click", function() {
-      $(this).fadeOut();
-      $(".sideNav").toggleClass("open");
-      $(".navover").toggleClass("open");
-      $("body").css("overflow", "hidden");
+    $(".sideNav").toggleClass("open");
+    $(".navover").toggleClass("open");
+    $("body").css("overflow", "hidden");
+    $(".main").toggleClass("trans");
   });
 
 
   // Close Side Nav
-  $(".navover, .close1").on("click", function() {
-      if($(".sideNav").hasClass("open")){
-          $(".menuTriger").fadeIn();
-          $(".navover").removeClass("open");
-          $(".sideNav").toggleClass("open");
-          $("body").css("overflow", "auto");
-      }
+  $(".navover").on("click", function() {
+    if($(".sideNav").hasClass("open")){
+      $(".navover").removeClass("open");
+      $(".sideNav").toggleClass("open");
+      $("body").css("overflow", "auto");
+      $(".main").toggleClass("trans");
+    }
   });
 
   // Main Slider
@@ -42,26 +42,30 @@ $(function() {
   });
 
   // clients Slider
-  $('.clients .owl-carousel').owlCarousel({
-    // autoplay: true,
+  // Disc Slider
+  $('.disc .owl-carousel').owlCarousel({
+    autoplay: true,
     rtl:true,
     loop:true,
     nav:true,
-    items: 7,
+    items: 5,
     dots: true,
     smartSpeed: 1000,
     responsive:{
       0:{
-          items:1
+        items:1
+      },
+      600:{
+        items:2
       },
       768:{
-          items:3
+        items:3
       },
       992:{
-          items:5
+        items:4
       },
       1200:{
-          items:7
+        items:5
       }
     },
     navText: ["<span></span>","<span></span>"]
@@ -73,9 +77,9 @@ $(function() {
   }
 
   $('.foot-links button').on('click', function() {
-      $(this).toggleClass("trans");
-      $(this).parent().parent().siblings().find('.collapse').collapse('hide');
-      $(this).parent().parent().siblings().find('button').removeClass("trans");
+    $(this).toggleClass("trans");
+    $(this).parent().parent().siblings().find('.collapse').collapse('hide');
+    $(this).parent().parent().siblings().find('button').removeClass("trans");
   });
 
 })
